@@ -1,0 +1,93 @@
+.overlay {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.containerChange {
+  background-color: #f2f7fd;
+  width: 550px;
+  height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.changeInput {
+  outline: none;
+  border: 2px solid #9daeeb;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.changeDescription {
+  display: flex;
+  align-items: start;
+}
+
+.listColor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  padding: 0;
+  justify-items: center;
+}
+
+.itemColor {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  list-style-type: none;
+  box-shadow: 0 0 5px #9a9a9a;
+}
+
+.itemColorActive {
+  outline: 3px solid #ffffff;
+  outline-offset: 5px;
+  box-shadow: 0 0 0 4px rgba(120, 150, 255, 0.25);
+}
+
+.changeBtns {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.changeBtn {
+  width: 200px;
+  border: none;
+  background-color: #9daeeb;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.changeBtn:hover {
+  background-color: #808dbe;
+}
+
+.deleteBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.deleteBtn {
+  width: 200px;
+  border: none;
+  background-color: #e32121;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.deleteBtn:hover {
+  background-color: #be1f1f;
+}

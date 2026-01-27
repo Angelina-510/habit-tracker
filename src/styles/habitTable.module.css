@@ -1,0 +1,36 @@
+.sheet {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.habitSheet {
+  display: grid;
+  grid-template-columns: 200px repeat(7, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.habitSheetDate {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habitSheetDateBtns {
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+}
+
+.habitSheetDateBtn {
+  border: none;
+  background-color: #9daeeb;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.habitSheetDateBtn:hover {
+  background-color: #808dbe;
+}

@@ -1,0 +1,19 @@
+.itemHabit {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  hyphens: auto;
+}
+
+.itemHabit:hover {
+  background-color: #d9dee4;
+  cursor: pointer;
+}
+
+.habitPencil {
+  transform: scaleX(-1);
+  color: #2e2e3a;
+}

@@ -1,0 +1,37 @@
+.checkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkBoxInput {
+  appearance: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: var(--background-color-check);
+  border-radius: 100%;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+  transition: 500ms;
+}
+
+.checkBoxInput:hover {
+  cursor: pointer;
+}
+
+.checkBoxInput::after {
+  content: "\2714";
+  position: absolute;
+  left: 9px;
+  width: 0;
+  height: 0;
+  font-size: 26px;
+  color: #4caf50;
+  transition: 200ms;
+  overflow: hidden;
+}
+
+.checkBoxInput:checked:after {
+  width: 30px;
+  height: 30px;
+}

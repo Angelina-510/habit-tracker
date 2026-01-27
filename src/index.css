@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f9fb;
+  color: #1f2937;
+  font-family: "Nunito", sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+button {
+  cursor: pointer;
+}
