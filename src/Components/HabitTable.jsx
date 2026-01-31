@@ -113,7 +113,7 @@ function HabitTable() {
             <Habit key={el.id} habit={el} />
             {week.map((date) => (
               <CheckBox
-                style={{ background: el.color }}
+                color={el.color}
                 checked={el.checkedDates.includes(date.toLocaleDateString())}
                 onChange={() => checkOrDeleteDate(el, date, indexHabit)}
               />

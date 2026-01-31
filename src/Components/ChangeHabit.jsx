@@ -1,10 +1,19 @@
 import { useContext, useEffect, useState } from "react";
 import { ModalContext, MyContext } from "../MyContext";
 import styles from "../styles/changeHabit.module.css";
-
+/**
+ *
+ * Компонент сайд-бар - изменение привычки.
+ *
+ * Данный компонент открывается при нажатии на любую из привычек.
+ *
+ * Можно поменять название, описание, цвет, а также можно сохранить или отменить изменения.
+ *
+ * Если привычка больше не актуальна, то в сайд-баре ее можно удалить.
+ */
 function ChangeHabit() {
   const { changeHabit, setChangeHabit } = useContext(ModalContext);
-  const { listHabit, setListHabit } = useContext(MyContext);
+  const { setListHabit } = useContext(MyContext);
   const colorList = [
     { name: "Peachpuff", codeColor: "#ffdab9" },
     { name: "Warm Cream", codeColor: "#EFE2C6" },

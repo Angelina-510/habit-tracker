@@ -2,6 +2,11 @@ import { useContext, useState } from "react";
 import { MyContext } from "../MyContext";
 import styles from "../styles/newHabit.module.css";
 
+/**
+ * Компонент создание новой привычки через ввод в input
+ *
+ */
+
 function NewHabit() {
   const [newHabit, setNewHabit] = useState("");
   const [showInput, setShowInput] = useState(false);
