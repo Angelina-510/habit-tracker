@@ -5,6 +5,11 @@ import styles from "../styles/habitTable.module.css";
 import Habit from "./Habit";
 import NewHabit from "./NewHabit";
 
+/**
+ * Компонент таблица, который состоит из списка привычек и календаря выполнения привычек
+ *
+ */
+
 function HabitTable() {
   const { listHabit, setListHabit } = useContext(MyContext);
   const [dateNow, setDateNow] = useState(new Date());
